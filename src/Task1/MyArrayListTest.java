@@ -19,11 +19,8 @@ public class MyArrayListTest {
         myArrayList.add("912");
         myArrayList.add("9324");
 
-        myArrayList.remove(143);
+        System.out.println(myArrayList.get(9));
 
-
-
-        System.out.println(myArrayList);
 
     }
 }

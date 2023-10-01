@@ -19,36 +19,37 @@ public class FileTask2 implements Serializable {
     }
 
     static FileTask2 deserialize(String fiePath) {
-        try(InputStream fis = new FileInputStream(fiePath);
-            ObjectInputStream in = new ObjectInputStream(fis)) {
+        try (InputStream fis = new FileInputStream(fiePath);
+             ObjectInputStream in = new ObjectInputStream(fis)) {
 
-            return  (FileTask2) in.readObject();
+            return (FileTask2) in.readObject();
 
-        }catch (Exception e){
+        } catch (Exception e) {
             throw new RuntimeException();
         }
     }
 
     static void serializeObject(Object input, String filePath) {
-        try(OutputStream fos = new FileOutputStream(filePath)
-            ; ObjectOutputStream out = new ObjectOutputStream(fos)){
-
+        try (OutputStream fos = new FileOutputStream(filePath)
+             ; ObjectOutputStream out = new ObjectOutputStream(fos)) {
 
             out.writeObject(input);
-        }catch (IOException e){
+
+        } catch (IOException e) {
             throw new RuntimeException();
         }
 
     }
+
     public String getNameUser() throws FileNotFoundException {
         int counter = 0;
         File file = new File("UserData.txt");
         FileInputStream fis = new FileInputStream(file);
         Scanner scanner = new Scanner(fis);
         String name = "";
-        while(scanner.hasNext()){
+        while (scanner.hasNext()) {
             counter++;
-            if(counter>0) {
+            if (counter > 0) {
                 name = scanner.nextLine();
             }
         }

@@ -12,7 +12,7 @@ public class Start {
         String text = "Danya, David, Max, Alex, Masha, Andrew";
 
         Sort<String> sort = (textSort)-> {
-            List<String> list= new ArrayList<>(Arrays.asList(text.split(", ")));
+            List<String> list= new ArrayList<>(Arrays.asList(textSort.split(", ")));
 
             Collections.sort(list);
 

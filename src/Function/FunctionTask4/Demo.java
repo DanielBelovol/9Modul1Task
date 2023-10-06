@@ -1,4 +1,4 @@
-package FunctionTask4;
+package Function.FunctionTask4;
 
 import java.util.stream.Stream;
 

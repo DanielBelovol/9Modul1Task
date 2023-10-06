@@ -1,6 +1,5 @@
-package FunctionTask4;
+package Function.FunctionTask4;
 
-import java.math.BigInteger;
 import java.util.stream.Stream;
 
 public class Generator {

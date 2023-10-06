@@ -1,4 +1,4 @@
-package FunctionTask3;
+package Function.FunctionTask3;
 
 import java.util.*;
 

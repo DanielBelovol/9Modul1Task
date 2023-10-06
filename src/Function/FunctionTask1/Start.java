@@ -1,4 +1,4 @@
-package FunctionTask1;
+package Function.FunctionTask1;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
